@@ -1,171 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Ibraheem Asif</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naltar Valley Tours</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        :root {
-            --bg: #0f172a;
-            --card: #111827;
-            --text: #e5e7eb;
-            --muted: #9ca3af;
-            --accent: #22c55e
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0
-        }
-
         body {
-            font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;
-            line-height: 1.6;
-            background: linear-gradient(120deg,#020617,#0f172a);
-            color: var(--text)
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         header {
+            background: #0066cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0
+            justify-content: center;
+            gap: 15px;
         }
 
         nav a {
-            color: var(--text);
+            color: #fff;
             text-decoration: none;
-            margin-left: 16px;
-            font-size: 14px
+            font-weight: bold;
         }
 
         .hero {
-            padding: 80px 0;
-            text-align: center
-        }
-
-            .hero h1 {
-                font-size: 48px;
-                margin-bottom: 10px
-            }
-
-            .hero p {
-                color: var(--muted)
-            }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            background: var(--accent);
-            color: #022c22;
-            padding: 10px 18px;
-            border-radius: 999px;
-            text-decoration: none;
-            font-weight: 600
+            background: url('naltar-hero.jpg') center/cover no-repeat;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 2rem;
+            text-shadow: 1px 1px 5px #000;
         }
 
         section {
-            margin-top: 50px
+            padding: 40px 20px;
         }
 
-        h2 {
-            margin-bottom: 10px
-        }
-
-        .grid {
+        .tours {
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-            gap: 20px
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
-        .card {
-            background: var(--card);
-            padding: 20px;
-            border-radius: 16px;
-            border: 1px solid #1f2937
+        .tour-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
         }
+
+            .tour-card img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .tour-card h3 {
+                margin: 10px;
+            }
+
+            .tour-card p {
+                margin: 0 10px 10px;
+            }
 
         footer {
+            background: #222;
+            color: #ddd;
             text-align: center;
-            margin: 60px 0 20px;
-            color: var(--muted);
-            font-size: 14px
-        }
-
-        @media(max-width:600px) {
-            .hero h1 {
-                font-size: 34px
-            }
+            padding: 15px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h3>Muhammad Ibraheem Asif</h3>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
 
-        <section class="hero">
-            <h1>Hello, I'm Muhammad Asif</h1>
-            <p>Welcome to my personal webpage. I am passionate about technology, creativity, and building useful solutions.</p>
-            <a class="btn" href="#contact">Get In Touch</a>
-        </section>
+    <!-- Header -->
+    <header>
+        <h1>Naltar Valley Tours</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="card">
-                <p>I am Muhammad Asif, a motivated individual interested in web development and digital innovation. This is my personal website built using HTML and CSS.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        Explore the Beauty of Naltar Valley
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Naltar Valley</h2>
+        <p>
+            Naltar Valley is one of the most breathtaking alpine valleys in northern Pakistan, famous for its lush forests,
+            sparkling lakes, and scenic mountain views. Join us on tours that dive into nature, culture, and adventure.
+        </p>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours">
+        <h2>Our Tours</h2>
+        <div class="tours">
+            <div class="tour-card">
+                <img src="tour1.jpg" alt="Naltar Lakes Tour">
+                <h3>Lakes Tour</h3>
+                <p>Visit the stunning turquoise lakes and enjoy guided hikes through alpine meadows.</p>
             </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="grid">
-                <div class="card">HTML</div>
-                <div class="card">CSS</div>
-                <div class="card">JavaScript</div>
-                <div class="card">Responsive Design</div>
+            <div class="tour-card">
+                <img src="tour2.jpg" alt="Winter Adventure">
+                <h3>Winter Adventure</h3>
+                <p>Experience snow-covered trails, skiing, and cozy mountain cabins.</p>
             </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <h4>Portfolio Website</h4>
-                    <p>A personal portfolio website to showcase my work and skills.</p>
-                </div>
-                <div class="card">
-                    <h4>Landing Page</h4>
-                    <p>A responsive landing page created with modern design practices.</p>
-                </div>
+            <div class="tour-card">
+                <img src="tour3.jpg" alt="Photography Tour">
+                <h3>Photography Tour</h3>
+                <p>Capture breathtaking landscapes with a professional photographer guide.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="card">
-                <p>Email: 2320997@chester.ac.uk</p>
-                <p>Phone: +44 7831507539</p>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@naltarvalleytours.com</p>
+        <p>Phone: +92 300 1234567</p>
+    </section>
 
-        <footer>
-            <p>� 2026 Muhammad Asif. All rights reserved.</p>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Naltar Valley Tours. All Rights Reserved.
+    </footer>
+
 </body>
 </html>
