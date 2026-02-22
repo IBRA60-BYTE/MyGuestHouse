@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naltar Valley Tours</title>
-    <link rel="stylesheet" href="styles.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
 
         header {
             background: #0066cc;
-            color: #fff;
+            color: white;
             padding: 20px;
             text-align: center;
         }
@@ -24,55 +24,52 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
         }
 
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
             font-weight: bold;
         }
 
+        /* HERO IMAGE (Image 3) */
         .hero {
-            background: url('https://images.dawn.com/news/1180628/large.jpg') center/cover no-repeat;
-            height: 450px;
+            background: url("image3.jpg") center/cover no-repeat;
+            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #fff;
+            color: white;
             font-size: 2rem;
-            text-shadow: 1px 1px 5px #000;
+            text-shadow: 2px 2px 8px black;
         }
 
         section {
             padding: 40px 20px;
+            text-align: center;
         }
 
-        .tours {
+        /* GALLERY SECTION */
+        .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            padding: 20px;
         }
 
-        .tour-card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-            .tour-card img {
+            .gallery img {
                 width: 100%;
-                height: 180px;
+                height: 400px;
                 object-fit: cover;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                transition: transform 0.3s ease;
             }
 
-            .tour-card h3 {
-                margin: 10px;
-            }
-
-            .tour-card p {
-                margin: 0 10px 10px;
-            }
+                .gallery img:hover {
+                    transform: scale(1.05);
+                }
 
         footer {
             background: #222;
@@ -82,66 +79,59 @@
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Header -->
     <header>
         <h1>Naltar Valley Tours</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#tours">Tours</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section (with added picture) -->
+    <!-- HERO SECTION -->
     <section class="hero">
-        Explore the Stunning Naltar Valley
+        Discover the Beauty of Naltar Valley
     </section>
 
-    <!-- About Section -->
+    <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Naltar Valley</h2>
         <p>
-            Naltar Valley is one of the most beautiful alpine valleys in Gilgit-Baltistan, Pakistan, known for its lush forests,
-            crystal-clear lakes, and dramatic mountain scenery. It’s a perfect destination for nature lovers and adventure seekers. :contentReference[oaicite:1]{index=1}
+            Naltar Valley is famous for its crystal-clear lakes, golden autumn trees,
+            and snow-covered mountains. It is one of the most breathtaking destinations
+            in northern Pakistan.
         </p>
     </section>
 
-    <!-- Tours Section -->
-    <section id="tours">
-        <h2>Our Tours</h2>
-        <div class="tours">
-            <div class="tour-card">
-                <img src="tour1.jpg" alt="Lakes Tour">
-                <h3>Lakes Tour</h3>
-                <p>Visit the serene alpine lakes like Satrangi and Firoza for breathtaking views and photography. :contentReference[oaicite:2]{index=2}</p>
-            </div>
-            <div class="tour-card">
-                <img src="tour2.jpg" alt="Ski Adventure">
-                <h3>Ski Adventure</h3>
-                <p>Experience skiing and snow activities around Naltar Ski Resort in winter. :contentReference[oaicite:3]{index=3}</p>
-            </div>
-            <div class="tour-card">
-                <img src="tour3.jpg" alt="Nature Trekking">
-                <h3>Nature Trekking</h3>
-                <p>Guided hikes through alpine forests and panoramic mountain trails. :contentReference[oaicite:4]{index=4}</p>
-            </div>
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <!-- Image 1 -->
+            <img src="image1.jpg" alt="Stone hut in Naltar Valley">
+
+            <!-- Image 2 -->
+            <img src="image2.jpg" alt="Green lake in Naltar Valley">
+
+            <!-- Image 3 (also shown again if you want) -->
+            <img src="image3.jpg" alt="Snow mountains reflection lake">
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: info@naltarvalleytours.com</p>
         <p>Phone: +92 300 1234567</p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        &copy; 2026 Naltar Valley Tours. All Rights Reserved.
+        © 2026 Naltar Valley Tours | All Rights Reserved
     </footer>
 
 </body>
