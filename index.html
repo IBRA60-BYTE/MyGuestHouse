@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naltar Valley Tours</title>
+    <title>Naltar Valley – Beauty & Resorts</title>
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
         }
 
         /* HEADER */
         header {
-            background-color: #0b3d91;
+            background-color: #083d77;
             color: white;
             padding: 20px;
             text-align: center;
@@ -38,7 +39,7 @@
                 text-decoration: underline;
             }
 
-        /* HERO SECTION */
+        /* HERO */
         .hero {
             background: url("images/image3.jpeg") center/cover no-repeat;
             height: 550px;
@@ -46,6 +47,7 @@
             justify-content: center;
             align-items: center;
             color: white;
+            text-align: center;
             font-size: 2.5rem;
             font-weight: bold;
             text-shadow: 3px 3px 10px black;
@@ -53,114 +55,149 @@
 
         /* SECTIONS */
         section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
         h2 {
+            color: #083d77;
             margin-bottom: 20px;
-            color: #0b3d91;
         }
 
-        /* GALLERY */
-        .gallery {
+        /* BEAUTY SECTION */
+        .beauty {
+            background-color: white;
+        }
+
+        /* RESORTS */
+        .resorts {
+            background-color: #eaf4ff;
+        }
+
+        .resort-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            padding: 20px;
+            margin-top: 30px;
         }
 
-            .gallery img {
-                width: 100%;
-                height: 400px;
-                object-fit: cover;
-                border-radius: 12px;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-                transition: transform 0.4s ease;
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-8px);
             }
 
-                .gallery img:hover {
-                    transform: scale(1.05);
-                }
-
-        /* CONTACT */
-        #contact p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
+            .card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
 
         /* FOOTER */
         footer {
             background-color: #111;
             color: #ccc;
-            padding: 15px;
             text-align: center;
+            padding: 20px;
             font-size: 14px;
         }
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .hero {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 height: 400px;
-            }
-
-            .gallery img {
-                height: 250px;
             }
         }
     </style>
-
 </head>
+
 <body>
 
-    <!-- HEADER -->
     <header>
-        <h1>Naltar Valley Tours</h1>
+        <h1>Naltar Valley</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#beauty">Beauty</a></li>
+                <li><a href="#resorts">Resorts</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero">
-        Explore the Beauty of Naltar Valley
+        Discover the Natural Beauty of Naltar Valley
     </section>
 
     <!-- ABOUT -->
     <section id="about">
         <h2>About Naltar Valley</h2>
         <p>
-            Naltar Valley is one of the most breathtaking destinations in northern Pakistan.
-            Known for its crystal-clear lakes, colorful autumn trees, and snow-covered mountains,
-            it is a paradise for nature lovers and adventure seekers.
+            Naltar Valley is located in the Gilgit-Baltistan region of northern Pakistan.
+            Surrounded by majestic mountains, alpine forests, and colorful lakes,
+            it is one of the most scenic destinations in the country.
         </p>
     </section>
 
-    <!-- GALLERY -->
-    <section id="gallery">
-        <h2>Photo Gallery</h2>
-        <div class="gallery">
-            <img src="images/image1.jpeg" alt="Stone hut in Naltar Valley">
-            <img src="images/image2.jpeg" alt="Green lake in Naltar Valley">
-            <img src="images/image3.jpeg" alt="Snow mountain reflection lake">
+    <!-- BEAUTY -->
+    <section id="beauty" class="beauty">
+        <h2>The Beauty of Naltar</h2>
+        <p>
+            Naltar Valley is famous for its crystal-clear lakes such as Satrangi Lake,
+            snow-covered peaks, lush green meadows, and vibrant autumn trees.
+            The valley offers breathtaking landscapes in every season.
+        </p>
+        <p>
+            Visitors can enjoy hiking, photography, skiing in winter,
+            and peaceful relaxation in the heart of nature.
+        </p>
+    </section>
+
+    <!-- RESORTS -->
+    <section id="resorts" class="resorts">
+        <h2>Resorts & Accommodation</h2>
+        <div class="resort-cards">
+
+            <div class="card">
+                <img src="images/image1.jpeg" alt="Naltar Resort">
+                <h3>Naltar Resort</h3>
+                <p>
+                    A comfortable resort offering scenic mountain views,
+                    cozy rooms, and traditional hospitality.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="images/image2.jpeg" alt="Lake View Resort">
+                <h3>Lake View Resort</h3>
+                <p>
+                    Located near the lakes, this resort provides
+                    peaceful surroundings and beautiful sunrise views.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="images/image3.jpeg" alt="Mountain Lodge">
+                <h3>Mountain Lodge</h3>
+                <p>
+                    Perfect for adventure lovers, offering easy access
+                    to trekking routes and winter skiing areas.
+                </p>
+            </div>
+
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@naltarvalleytours.com</p>
-        <p>Phone: +92 300 1234567</p>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
-        © 2026 Naltar Valley Tours | All Rights Reserved
+        © 2026 Naltar Valley Tourism | All Rights Reserved
     </footer>
 
 </body>
