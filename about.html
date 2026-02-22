@@ -13,9 +13,9 @@
             background-color: #f4f4f4;
         }
 
-        /* HEADER */
+        /* HEADER - Changed to black */
         header {
-            background-color: #083d77;
+            background-color: #000;
             color: white;
             padding: 20px;
             text-align: center;
@@ -55,15 +55,24 @@
             text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
         }
 
-        /* CONTENT */
-        section {
-            padding: 60px 20px;
+        /* CONTENT SECTION WITH IMAGE6 BACKGROUND */
+        .content-bg {
+            /* Linear gradient creates a dark tint so white text is readable */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/image6.jpg") center/cover no-repeat;
+            color: white;
+            padding: 80px 20px;
+            max-width: 100%; /* Changed to 100% to let background span the width */
+            text-align: center;
+        }
+
+        /* Container to keep text centered and sized nicely */
+        .container {
             max-width: 1000px;
             margin: auto;
         }
 
-        h2 {
-            color: #083d77;
+        .content-bg h2 {
+            color: white; /* White headings for visibility */
             margin-bottom: 20px;
         }
 
@@ -79,7 +88,6 @@
             text-align: center;
             padding: 20px;
             font-size: 14px;
-            margin-top: 40px;
         }
 
         /* RESPONSIVE */
@@ -105,38 +113,38 @@
         </nav>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
         About Naltar Valley
     </section>
 
-    <!-- ABOUT CONTENT -->
-    <section>
-        <h2>Discover Naltar Valley</h2>
-        <p>
-            Naltar Valley is one of the most beautiful valleys in northern Pakistan,
-            located in the Gilgit-Baltistan region. Surrounded by towering mountains,
-            lush pine forests, and colorful alpine lakes, it is a paradise for nature lovers.
-        </p>
+    <section class="content-bg">
+        <div class="container">
+            <h2>Discover Naltar Valley</h2>
+            <p>
+                Naltar Valley is one of the most beautiful valleys in northern Pakistan,
+                located in the Gilgit-Baltistan region. Surrounded by towering mountains,
+                lush pine forests, and colorful alpine lakes, it is a paradise for nature lovers.
+            </p>
 
-        <p>
-            The valley is especially famous for Satrangi (Rainbow) Lake, which changes
-            colors depending on the sunlight. During winter, Naltar becomes a popular
-            skiing destination, attracting visitors from across the country.
-        </p>
+            <p>
+                The valley is especially famous for Satrangi (Rainbow) Lake, which changes
+                colors depending on the sunlight. During winter, Naltar becomes a popular
+                skiing destination, attracting visitors from across the country.
+            </p>
 
-        <h2>Nearby Resorts & Hospitality</h2>
-        <p>
-            Visitors traveling to the northern areas often stay at famous resorts such as
-            Shangrila Resort in Skardu, known for its stunning lake views and peaceful
-            environment. The region offers a mix of luxury resorts, mountain lodges,
-            and eco-friendly accommodations.
-        </p>
+            <h2>Nearby Resorts & Hospitality</h2>
+            <p>
+                Visitors traveling to the northern areas often stay at famous resorts such as
+                Shangrila Resort in Skardu, known for its stunning lake views and peaceful
+                environment. The region offers a mix of luxury resorts, mountain lodges,
+                and eco-friendly accommodations.
+            </p>
 
-        <p>
-            Whether you are looking for adventure, relaxation, photography opportunities,
-            or a family vacation, Naltar Valley provides an unforgettable experience.
-        </p>
+            <p>
+                Whether you are looking for adventure, relaxation, photography opportunities,
+                or a family vacation, Naltar Valley provides an unforgettable experience.
+            </p>
+        </div>
     </section>
 
     <footer>
