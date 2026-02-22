@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resorts – Naltar Valley</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #083d77;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+        /* HERO */
+        .hero {
+            height: 500px;
+            background-image: url("images/shangrila-hero.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 4px 4px 15px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+
+        /* SECTION */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #083d77;
+            margin-bottom: 20px;
+        }
+
+        /* RESORT CARDS */
+        .resort-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-8px);
+            }
+
+            .card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+        /* FOOTER */
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero {
+                font-size: 1.8rem;
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Naltar Valley Resorts</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resorts.html">Resorts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        Stay at the Best Resorts in Naltar Valley
+    </section>
+
+    <!-- RESORTS LIST -->
+    <section>
+        <h2>Top Resorts</h2>
+        <div class="resort-cards">
+
+            <!-- Shangrila Resort -->
+            <div class="card">
+                <img src="images/shangrila-hero.jpeg" alt="Shangrila Resort Naltar Valley">
+                <h3>Shangrila Resort</h3>
+                <p>
+                    Located near Skardu, Shangrila Resort is known as "Heaven on Earth".
+                    Enjoy breathtaking lake and mountain views, luxurious rooms, and peaceful surroundings.
+                </p>
+            </div>
+
+            <!-- Lake View Resort -->
+            <div class="card">
+                <img src="images/image2.jpeg" alt="Lake View Resort">
+                <h3>Lake View Resort</h3>
+                <p>
+                    Nestled near one of Naltar’s serene lakes, this resort offers beautiful sunrises
+                    and tranquil evenings for families and couples.
+                </p>
+            </div>
+
+            <!-- Mountain Lodge -->
+            <div class="card">
+                <img src="images/image3.jpeg" alt="Mountain Lodge">
+                <h3>Mountain Lodge</h3>
+                <p>
+                    Perfect for adventure seekers, this lodge provides easy access to trekking routes,
+                    skiing areas, and stunning alpine landscapes.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Naltar Valley Tourism | All Rights Reserved
+    </footer>
+
+</body>
+</html>
