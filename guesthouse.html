@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Suites | Naltar Heritage Inn</title>
+    <style>
+        :root {
+            --primary-black: #111111;
+            --accent-gold: #c5a059;
+            --bg-gray: #f9f9f9;
+            --text-muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            color: #333;
+            background-color: white;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--primary-black);
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+            nav a:hover {
+                color: var(--accent-gold);
+            }
+
+        /* PAGE TITLE */
+        .page-title {
+            padding: 60px 5%;
+            background: var(--bg-gray);
+            text-align: center;
+        }
+
+            .page-title h1 {
+                font-size: 2.5rem;
+                margin: 0;
+                color: var(--primary-black);
+            }
+
+            .page-title p {
+                color: var(--text-muted);
+                margin-top: 10px;
+            }
+
+        /* ROOMS GRID */
+        .rooms-container {
+            padding: 60px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .room-card {
+            border: 1px solid #eee;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+            .room-card:hover {
+                box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            }
+
+        .room-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .room-info {
+            padding: 25px;
+        }
+
+        .room-price {
+            color: var(--accent-gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .room-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .room-info p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .room-features {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        /* HOUSE RULES SECTION */
+        .house-info {
+            background-color: var(--primary-black);
+            color: white;
+            padding: 80px 10%;
+            margin-top: 40px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .info-box h2 {
+            color: var(--accent-gold);
+            font-size: 2rem;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            color: #888;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .rooms-container {
+                padding: 40px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">NALTAR Heritage Inn</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="guesthouse.html" style="color: var(--accent-gold);">Guest House</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-title">
+        <h1>Our Accommodations</h1>
+        <p>Hand-crafted rooms designed for mountain tranquility.</p>
+    </div>
+
+    <section class="rooms-container">
+
+        <div class="room-card">
+            <div class="room-image" style="background-image: url('images/image5.jpg');"></div>
+            <div class="room-info">
+                <span class="room-price">Rs. 12,000 / night</span>
+                <h3>Deluxe Pine Suite</h3>
+                <p>Enjoy panoramic views of the pine forests with a private balcony and traditional wooden interiors.</p>
+                <div class="room-features">
+                    <span>🛏️ King Bed</span>
+                    <span>🚿 En-suite Bath</span>
+                    <span>🔥 Heater</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <div class="room-image" style="background-image: url('images/image2.jpeg');"></div>
+            <div class="room-info">
+                <span class="room-price">Rs. 8,500 / night</span>
+                <h3>Mountain View Standard</h3>
+                <p>Cozy and warm, perfect for couples looking to wake up to the sunrise over the peaks.</p>
+                <div class="room-features">
+                    <span>🛏️ Queen Bed</span>
+                    <span>🚿 Shared Bath</span>
+                    <span>☕ Coffee Maker</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <div class="room-image" style="background-image: url('images/Image4.jpeg');"></div>
+            <div class="room-info">
+                <span class="room-price">Rs. 15,000 / night</span>
+                <h3>Family Heritage Loft</h3>
+                <p>A spacious two-story loft designed for families, featuring a fireplace and large lounge area.</p>
+                <div class="room-features">
+                    <span>🛏️ 2 King Beds</span>
+                    <span>🚿 En-suite Bath</span>
+                    <span>📺 Smart TV</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="house-info">
+        <div class="info-grid">
+            <div class="info-box">
+                <h2>Stay Guidelines</h2>
+                <ul>
+                    <li><strong>Check-in:</strong> 2:00 PM</li>
+                    <li><strong>Check-out:</strong> 11:00 AM</li>
+                    <li><strong>Cancellation:</strong> Free up to 48 hours before arrival.</li>
+                    <li><strong>Transport:</strong> 4x4 Jeep transfer available from Gilgit.</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Guest Services</h2>
+                <ul>
+                    <li>Complimentary traditional Gilgiti breakfast.</li>
+                    <li>Guided trekking tours to Satrangi Lake.</li>
+                    <li>Evening bonfire and BBQ arrangements.</li>
+                    <li>24/7 solar-powered backup.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Naltar Heritage Inn | Managed by Naltar Tourism.</p>
+        <p>Contact us: +92 300 1234567</p>
+    </footer>
+
+</body>
+</html>
